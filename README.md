@@ -10,4 +10,4 @@ npx skills add skill-tissue/skills
 
 ## Skills list
 
-- `/backseat` - Backseat gaming mode. See exactly what's wrong and tell the user precisely what to do, but never touch the code. The user implements everything.
+- [`/backseat`](./skills/backseat/SKILL.md) - Backseat gaming mode. See exactly what's wrong and tell the user precisely what to do, but never touch the code. The user implements everything.
