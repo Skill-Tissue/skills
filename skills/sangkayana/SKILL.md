@@ -8,13 +8,15 @@ disable-model-invocation: true
 
 A **council** convened over the **canon**: every skill installed for the agent. A council recites the canon to find what no longer belongs, and it rules on evidence.
 
-What a removal reclaims is **context load**. A model-invoked skill spends its description on every turn of every session, whether or not it ever fires; a user-invoked one costs nothing until it is typed. `tally.py` prints that figure. It is what the council is arguing about, so quote it when you report.
+What a removal reclaims is **context load**. A model-invoked skill spends its description on every turn of every session, whether or not it ever fires; a user-invoked one costs nothing until it is typed. `tally.ts` prints that figure. It is what the council is arguing about, so quote it when you report.
 
 ## 1. Convene
 
 ```shell
-python3 <base directory of this skill>/tally.py
+node <base directory of this skill>/tally.ts
 ```
+
+Node 22.18 or newer runs it directly, with no dependencies and no build step.
 
 Read the **horizon** block before the rows. Two evidence streams reach back different distances, and the shorter one governs: typed invocations survive in `history.jsonl` for as long as that file goes back, while model invocations live only in session transcripts, which get swept. Skills shared with other agents can fire where this tally cannot see at all.
 
@@ -64,4 +66,4 @@ Nothing leaves the canon without an explicit yes, named skill by skill. Then, by
 
 For **sharpen**, edit the description rather than removing the skill, and follow `writing-for-agents` for the wording.
 
-Completion: every approved skill is gone from `~/.claude/skills`, and you have re-run `tally.py` to show the reclaimed load.
+Completion: every approved skill is gone from `~/.claude/skills`, and you have re-run `tally.ts` to show the reclaimed load.
