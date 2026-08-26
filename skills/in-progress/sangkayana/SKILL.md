@@ -8,12 +8,12 @@ disable-model-invocation: true
 
 A **council** convened over the **canon**: every skill installed for the agent. A council recites the canon to find what no longer belongs, and it rules on evidence.
 
-What a removal reclaims is **context load**. A model-invoked skill spends its description on every turn of every session, whether or not it ever fires; a user-invoked one costs nothing until it is typed. `tally.ts` prints that figure. It is what the council is arguing about, so quote it when you report.
+What a removal reclaims is **context load**. A model-invoked skill spends its description on every turn of every session, whether or not it ever fires; a user-invoked one costs nothing until it is typed. `tally.mts` prints that figure. It is what the council is arguing about, so quote it when you report.
 
 ## 1. Convene
 
 ```shell
-node <base directory of this skill>/tally.ts
+node <base directory of this skill>/tally.mts
 ```
 
 Node 22.18 or newer runs it directly, with no dependencies and no build step.
@@ -66,4 +66,4 @@ Nothing leaves the canon without an explicit yes, named skill by skill. Then, by
 
 For **sharpen**, edit the description rather than removing the skill, and follow `writing-for-agents` for the wording.
 
-Completion: every approved skill is gone from `~/.claude/skills`, and you have re-run `tally.ts` to show the reclaimed load.
+Completion: every approved skill is gone from `~/.claude/skills`, and you have re-run `tally.mts` to show the reclaimed load.

@@ -10,7 +10,8 @@
  * desc_words: size of the always-loaded description; the context load a removal reclaims.
  * last_used: date of most recent evidence, or "-" when the record is silent.
  *
- * Runs on Node 22.18+ with no dependencies and no build step.
+ * Runs on Node 22.18+ with no dependencies and no build step. The .mts extension
+ * keeps it ESM regardless of any package.json near the install location.
  */
 import { globSync, lstatSync, readFileSync, readdirSync, realpathSync, statSync } from "node:fs";
 import { homedir } from "node:os";
